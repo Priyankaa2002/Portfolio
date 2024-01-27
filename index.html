@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet"  href="style.css">
+    <script src="https://kit.fontawesome.com/f513a6d2ef.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#Portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    
+                </ul>
+                
+            </nav>
+            <div class="header-text">
+               
+                
+
+                <h1>Hello world! I'm <span>Priyanka Prajapati</span> </h1>
+                <p> I love turning code into cool websites. Join me on this fun tech adventure</p>
+            </div>
+        </div>
+        <!-------------About ------------>
+    <div>
+       <div id="about">
+        <div class="container">
+            <div class="row">
+               
+                <div class="about-col-2">
+                    <h1 class = "subtitle">About Me</h1>
+                    <p id = "con">I'm a third-year Integrated MSc Physics student at SVNIT, Surat, and I absolutely love diving into the world of physics. At the same time, I'm really into web development, using my tech skills to solve problems in cool ways. My goal is to continue merging my interests in technology and creative thinking to contribute meaningfully in various projects. Exploring the intersection of different fields excites me, and I'm motivated to make a positive impact through my interdisciplinary approach.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>Proficient in HTML, CSS, and JavaScript, with the ability to design and build user-friendly and responsive web interfaces.</li>
+                            <li ><span>Back-End Development</span><br>Familiar with Node.js for server-side scripting and data handling.</li>
+                            <li><span>JavaScript Framework </span><br>Experienced in React.js for building complex and dynamic web applications.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Integrated MSc Physics</span><br>SVNIT, Surat (2021-26)</li>
+                            
+
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       </div> 
+    </div>
+    </div>
+
+<!-------Portfolio-->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class = "subtitle">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/drum.png">
+                <div class="layer">
+                    <h3>Drum-kit</h3>
+                    <p>Rock out with your virtual band! This interactive Javascript website lets you become a drumming maestro using your computer keyboard.</p>
+                    <a href = "https://priyankaa2002.github.io/drumkit"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/keep.png">
+                <div class="layer">
+                    <h3>Keeper</h3>
+                    <p>Craft your thoughts! This interactive note-making website built with React JS lets you capture ideas.</p>
+                    <a href = "https://58bxk.csb.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/simongame1.png">
+                <div class="layer">
+                    <h3>Simon Game Challenge</h3>
+                    <p>
+                        Challenge your memory and reflexes with this addictive Simon game! Built with jQuery and JavaScript, it lights up in sequences you must repeat.</p>
+                    <a href = "https://priyankaa2002.github.io/Simon-Game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-------------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>its.priyankaprajapati.2002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9510726554</p>
+               
+            </div>
+            
+
+            
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Priyanka 2024 <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="index.js"  charset="UTF-8"></script>
+
+   
+</body>
+</html>

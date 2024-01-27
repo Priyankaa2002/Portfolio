@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background:rgb(31, 31, 31);
+    color: #fff;
+}
+
+
+
+#header{
+    width:100%;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+    
+}
+
+nav{
+    align-items: center ;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.logo{
+    width: 220x;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+}
+ nav ul li a:hover{
+    text-decoration: underline #ff004f;
+ }
+
+nav ul li a ::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a :hover::after{
+    width: 100%;
+   
+}
+
+.header-text{
+   margin-top:  20%;
+   font-size: 30px;
+  margin-bottom: 10%;
+ 
+  display: grid;
+  place-items: center;
+}
+.header-text h1{
+  
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+.header-text p{
+    margin-top:20px;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: whitesmoke;}
+/*------------About--------*/
+
+#about{
+   margin-top: 100px;
+    color: white;
+   position: relative;
+
+}
+
+
+
+
+
+.about-col-2{
+ margin-top: 80px;
+
+  
+
+}
+
+#con{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom : 80px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+   
+    
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color:#ff004f;
+    font-size: 16px;
+    font-weight: 200;
+    
+}
+
+.tab-contents ul li{
+    padding:5px;
+}
+
+.tab-contents ul li p{
+    font-size:14px ;
+}
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*...............My Projects......*/
+
+#Portfolio{
+   
+    padding: 50px 0;
+    margin-top: 1000px;
+    
+}
+
+.work-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 60px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0, 0, 0.6), #00204da7);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+   
+}
+.layer h3{
+    font-size: 1.5rem;
+    font-weight: 750;
+    margin-bottom: 20px;
+    margin-top: 20%;
+}
+.layer p{
+    font-weight: 500;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background0.5s;
+    margin-bottom: 10%;
+}
+.btn:hover{
+    background: #ff004f;
+
+
+}
+/*-------Contact ------*/
+
+
+#contact{
+    margin-top: 150px;
+}
+.contact-left{
+    flex-basis:35%;
+   
+
+}
+.contact-right{
+    flex-basis:60%;
+    
+
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100% ;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626 ;
+    font-weight: 300;
+    margin-top: 20px ;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+/*--------css for small screen -----*/
+
+nav .fa-solid{
+    display: none;
+}
+@media only screen and(max-width: 600px){
+    #header{
+        background-image: url(images/priyanka.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 40px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left{
+        flex-basis: 100%;
+        justify-content: center;
+
+    }
+    .copyright{
+        font-size: 14px;
+       
+    }
+}
+#msg{
+    color: aquamarine;
+    margin-top: -40px;
+    display: block;
+}
